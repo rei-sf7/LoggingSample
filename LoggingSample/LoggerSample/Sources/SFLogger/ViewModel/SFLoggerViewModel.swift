@@ -13,7 +13,7 @@ final class SFLoggerViewModel
     
     func loggerStartLogMessage()
     {
-        let logMessage: String = self.loggerModel.createLogMessage("以下のファイルにログの記録を開始します。\n ____________________ \n\(self.loggerModel.FilePath!)\n ____________________ \n", logType: .Infomation, error: nil, file: #file, function: #function, line: #line)
+        let logMessage: String = self.loggerModel.createLogMessage("以下のファイルにログの記録を開始します。\n ____________________ \n\(self.loggerModel.FileFullPath!)\n ____________________ \n", logType: .Infomation, error: nil, file: #file, function: #function, line: #line)
         print(logMessage)
     }
     
